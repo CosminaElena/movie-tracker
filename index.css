@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+  
+
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: #BCD6E0
+}
+  
+
+.header {  
+  text-align: center;
+  margin-top: 130px;
+}
+
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.header h1 {
+  font-size: 50px; 
+}
+ 
+
+.leftcolumn {
+  position: absolute;
+  float: left;
+  width: 25%;
+  background-color: #f0f6f8;;
+  padding-left: 10px;
+  margin-top: 300px;
+  width: 270px;
+  height: 600px;
+  cursor: pointer;
+}
+
+
+#addFilm {
+  justify-content: space-around;
+  margin-left: -10px;
+  list-style-type: none;
+}
+
+
+.butoane {
+  margin-left: 30px;
+  justify-content: space-between;
+  font-display: inline-block;
+}
+
+
+h2 {
+  text-align: left;
+}
+
+
+.film {
+  float: right;
+  width: 65%;
+  background-color: #f0f6f8;
+  padding-right : 40px;
+  min-height: 10vh;
+  margin-top: 300px;
+  margin-bottom: -250px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.descriere {
+  margin-top: 50px;
+  position: absolute;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;  
+}
+
+
+.topnav a {
+  color: #f2f2f2;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+
+.footer {
+  margin-top: 2500px;
+  text-align-last: center;
+}
+

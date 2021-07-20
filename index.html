@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css" />
+	<title>Movies</title>
+</head>
+
+<body onload = "onloadFunction()"></body>
+
+<body>
+
+
+	<div id="root"></div>
+
+	<div class="header">
+		<h1>Movie maker</h1>
+		<p></p>
+	</div>
+
+
+	<div class="topnav">
+	
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+	
+
+	<div class="rightcolumn">
+		<div class="descriere">
+		
+		    <br>
+			<p>Chiar daca premierele mondiale din lumea cinematografiei au avut o perioada de pauza, marile studiouri isi 
+            propun sa ne incante in 2021 cu unele dintre cele mai spectaculoase ecranizari din ultimii ani. James Bond, 
+            Black Widow si Death on the Nile sunt doar cateva dintre cele mai bune filme pe care nu trebuie sa le ratezi in cinematografe.</p>
+
+            <p>Daca vrei sa stii si ce alte pelicule te mai asteapta, ti-am pregatit o lista cu filme bune si recente care merita 
+            vazute in 2021. Horror, comedie, drama, actiune, aventura, science-fiction sau orice alt gen preferi, fii sigur ca vei gasi 
+            un film exceptional care trebuie vazut neaparat.</p>
+
+			
+		</div>
+
+	
+		<div id="film-list">
+			<div class="film"></div>
+		</div>
+
+    </div>
+
+
+	<div class="leftcolumn">
+		<div class="formular">
+
+		  <h2>Formular</h2>
+		  <p>Adauga un film nou</p>
+		
+		  <ul>
+		  <form id="addFilm">
+			<li>Nume: <br><input type="text" name="filmName" placeholder="Nume film" style="width: 180px"></li>
+			<li>Descriere: <br><textarea name="filmDes" type="text" placeholder="Adauga o descriere" style="width: 180px"></textarea></li>
+			<li>An: <br><input type="number" name="filmYear" placeholder="Anul lansarii" style="width: 180px"></li>
+			<li>Rating: <br><input type="number" name="filmRate" placeholder="Introdu nota filmului" style="width: 180px"></li>
+			<li>Data adaugare: <input type="date" name="filmDate" style="width: 180px"></li>
+			<li>Imagine: <br><input type="text" name="filmImg" placeholder="Introdu adresa imaginii" style="width: 180px"></li>
+			<br>
+			<input type="submit" value="Adauga film nou">
+		  </form>
+		  </ul>
+
+		</div>
+
+
+		<div class="sortare">
+		  <h2>Sorteaza filmele</h2>
+	      <div class="butoane">
+			<button id="sortByName">Sorteaza dupa nume</button>
+			<button id="sortByYear">Sorteaza dupa an</button>
+			<button id="sortByRate">Sorteaza dupa rating</button>
+			<button id="sortByDateAdd">Sorteaza dupa data adaugarii</button>
+		  </div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p id = "up"></p>
+		<button onclick = "up_Run()">Schimba culoarea</button>	
+		<p id = "down" style ="color:#D3EAD9;"></p>
+	</div>
+
+	
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
